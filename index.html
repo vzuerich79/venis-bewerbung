@@ -7,10 +7,7 @@
     <meta name="description" content="IT-interessierter Schüler – Online-Bewerbungsportfolio">
     <meta name="keywords" content="IT Bewerbung, Schüler, Scratch, Portfolio">
 
-    <!-- Icons -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
-
-    <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <title>IT-Bewerbung – Venis Ibrahimi</title>
@@ -22,7 +19,7 @@
     <nav class="nav container">
         <a href="#" class="nav__logo">Venis Ibrahimi</a>
 
-        <div class="nav__menu" id="nav-menu">
+        <div class="nav__menu">
             <ul class="nav__list grid">
                 <li class="nav__items"><a href="#home" class="nav__link active-link">Home</a></li>
                 <li class="nav__items"><a href="#about" class="nav__link">Über mich</a></li>
@@ -37,26 +34,18 @@
 
 <main class="main">
 
-<!-- HOME -->
+<!-- HOME (ohne Bild) -->
 <section class="home section" id="home">
-    <div class="home__container container grid">
-
+    <div class="home__container container">
         <div class="home__data">
-            <h1 class="home_title">Hi 👋, ich bin Venis Ibrahimi</h1>
+            <h1 class="home_title">Hi, ich bin Venis Ibrahimi</h1>
             <h3 class="home__subtitle">IT-interessierter Schüler</h3>
             <p class="home__description">
-                Motivation für eine Ausbildung im IT-Bereich. Interesse an Programmierung,
-                Scratch-Projekten und Webentwicklung.
+                Motivation für eine Ausbildung im IT-Bereich. Interesse an Scratch, Programmierlogik und Webentwicklung.
+                Diese Webseite dient als meine Online-Bewerbung.
             </p>
             <a href="#contact" class="button button--flex">Kontakt</a>
         </div>
-
-        <div class="home__img">
-            <img src="assets/img/Venis_Bild.jpg"
-                 alt="Venis Ibrahimi"
-                 style="max-width:260px; border-radius:20px;">
-        </div>
-
     </div>
 </section>
 
@@ -65,21 +54,13 @@
     <h2 class="section__title">Über mich</h2>
     <span class="section__subtitle">Kurzvorstellung</span>
 
-    <div class="about__container container grid">
-
-        <img src="assets/img/Venis_Bild.jpg"
-             alt="Venis Ibrahimi"
-             class="about__img">
-
-        <div class="about__data">
-            <p class="about__description">
-                Ich bin Schüler mit großem Interesse an Informationstechnologie.
-                Besonders arbeite ich mit Scratch, um Programmierlogik und strukturiertes Denken zu lernen.
-                Zusätzlich beschäftige ich mich mit HTML und CSS und bilde mich durch Online-Kurse weiter.
-                Ich bin motiviert, zuverlässig und lernbereit.
-            </p>
-        </div>
-
+    <div class="about__container container">
+        <p class="about__description">
+            Ich bin Schüler mit großem Interesse an Informationstechnologie.
+            Mit Scratch entwickle ich eigene Spiele und lerne dabei logisches Denken, Abläufe und Problemlösung.
+            Zusätzlich beschäftige ich mich mit HTML und CSS und bilde mich selbstständig weiter.
+            Ich bin motiviert, zuverlässig und lernbereit.
+        </p>
     </div>
 </section>
 
@@ -88,9 +69,9 @@
     <h2 class="section__title">Skills</h2>
     <span class="section__subtitle">Grundkenntnisse</span>
 
-    <div class="skills__container container grid">
+    <div class="skills__container container">
         <ul>
-            <li>Scratch (Programmierung & Logik)</li>
+            <li>Scratch (Spiele, Logik, Variablen, Events)</li>
             <li>HTML & CSS (Grundlagen)</li>
             <li>Logisches Denken & Problemlösung</li>
             <li>Eigenständiges Lernen</li>
@@ -99,21 +80,37 @@
     </div>
 </section>
 
-<!-- PORTFOLIO -->
+<!-- PORTFOLIO / SCRATCH DOWNLOADS -->
 <section class="portfolio section" id="portfolio">
     <h2 class="section__title">Projekte</h2>
-    <span class="section__subtitle">Lern- & Schulprojekte</span>
+    <span class="section__subtitle">Scratch-Projekte (Download & öffnen)</span>
 
     <div class="portfolio__container container grid">
 
         <div class="portfolio__content">
-            <h3>Scratch-Projekte</h3>
-            <p>Eigene Spiele und Animationen zur Übung von Programmierlogik.</p>
+            <h3>Scratch Projekt: „venis projekt“</h3>
+            <p>
+                Datei herunterladen und in Scratch öffnen über:
+                <strong>Datei → Von deinem Computer laden</strong>.
+            </p>
+            <a href="assets/scratch/venis%20projekt.sb3"
+               download
+               class="button button--flex button--small">
+                Scratch öffnen
+            </a>
         </div>
 
         <div class="portfolio__content">
-            <h3>Portfolio-Webseite</h3>
-            <p>Diese Webseite als Online-Bewerbung mit HTML & CSS.</p>
+            <h3>Scratch Projekt: „venis fishingsim“</h3>
+            <p>
+                Datei herunterladen und in Scratch öffnen über:
+                <strong>Datei → Von deinem Computer laden</strong>.
+            </p>
+            <a href="assets/scratch/venis%20fishingsim.sb3"
+               download
+               class="button button--flex button--small">
+                Scratch öffnen
+            </a>
         </div>
 
     </div>
@@ -122,13 +119,13 @@
 <!-- CERTIFICATES -->
 <section class="certificate section" id="certificates">
     <h2 class="section__title">Zertifikate</h2>
-    <span class="section__subtitle">Nachweise & Kurse</span>
+    <span class="section__subtitle">Nachweise</span>
 
     <div class="container">
         <ul>
-            <li><strong>Grundlagen der Informatik für die Berufswelt</strong> (FSWI, Oktober 2024)</li>
-            <li><strong>Python Basic / Fortgeschritten / Master</strong> (Logiscool Zürich Süd)</li>
-            <li><strong>Blockprogrammierung (Scratch)</strong> (Logiscool)</li>
+            <li>Grundlagen der Informatik für die Berufswelt (FSWI)</li>
+            <li>Python Basic / Fortgeschritten / Master (Logiscool Zürich Süd)</li>
+            <li>Scratch / Blockprogrammierung (Logiscool)</li>
         </ul>
 
         <div style="margin-top:20px;">
@@ -146,15 +143,11 @@
     <h2 class="section__title">Kontakt</h2>
     <span class="section__subtitle">Erreichbarkeit</span>
 
-    <div class="contact__container container grid">
-        <div>
-            <p><strong>Email:</strong> venis.ibrahimi10@gmail.com</p>
-            <p><strong>GitHub:</strong>
-                <a href="https://github.com/vzuerich79" target="_blank">
-                    github.com/vzuerich79
-                </a>
-            </p>
-        </div>
+    <div class="contact__container container">
+        <p><strong>Email:</strong> venis.ibrahimi10@gmail.com</p>
+        <p><strong>GitHub:</strong>
+            <a href="https://github.com/vzuerich79" target="_blank">github.com/vzuerich79</a>
+        </p>
     </div>
 </section>
 
