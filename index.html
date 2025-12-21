@@ -1,164 +1,126 @@
-
 <!DOCTYPE html>
 <html lang="de">
-    
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="IT-interessierter Schüler – Online-Bewerbungsportfolio">
-    <meta name="keywords" content="IT Bewerbung, Schüler, Scratch, Portfolio">
-
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT-Bewerbung – Venis Ibrahimi</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-<header class="header" id="header">
+<header class="header">
     <nav class="nav container">
-        <a href="#" class="nav__logo">Venis Ibrahimi</a>
-
-        <div class="nav__menu">
-            <ul class="nav__list grid">
-                <li class="nav__items"><a href="#home" class="nav__link active-link">Home</a></li>
-                <li class="nav__items"><a href="#about" class="nav__link">Über mich</a></li>
-                <li class="nav__items"><a href="#skills" class="nav__link">Skills</a></li>
-                <li class="nav__items"><a href="#portfolio" class="nav__link">Projekte</a></li>
-                <li class="nav__items"><a href="#certificates" class="nav__link">Zertifikate</a></li>
-                <li class="nav__items"><a href="#contact" class="nav__link">Kontakt</a></li>
-            </ul>
-        </div>
+        <h2>Venis Ibrahimi</h2>
+        <ul class="nav__list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Über mich</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Projekte</a></li>
+            <li><a href="#certificates">Zertifikate</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
     </nav>
 </header>
 
-<main class="main">
+<main>
 
-<!-- HOME (ohne Bild) -->
-<section class="home section" id="home">
-    <div class="home__container container">
-        <div class="home__data">
-            <h1 class="home_title">Hi, ich bin Venis Ibrahimi</h1>
-            <h3 class="home__subtitle">IT-interessierter Schüler</h3>
-            <p class="home__description">
-                Motivation für eine Ausbildung im IT-Bereich.
-            </p>
-            <a href="#contact" class="button button--flex">Kontakt</a>
-        </div>
-    </div>
-</section>
-
-<!-- ABOUT -->
-<section class="about section" id="about">
-    <h2 class="section__title">Über mich</h2>
-    <span class="section__subtitle">Kurzvorstellung</span>
-
-    <div class="about__container container">
-        <p class="about__description">
-            Ich bin Schüler mit großem Interesse an Informationstechnologie.
-            Mit Scratch entwickle ich eigene Spiele und lerne dabei logisches Denken, Abläufe und Problemlösung.
-            Zusätzlich beschäftige ich mich mit HTML und CSS und bilde mich selbstständig weiter.
-            Ich bin motiviert, zuverlässig und lernbereit.
+<!-- HOME – KEIN BILD -->
+<section id="home" class="section">
+    <div class="container">
+        <h1>Hi, ich bin Venis Ibrahimi</h1>
+        <h3>IT-interessierter Schüler</h3>
+        <p>
+            Motivation für eine Ausbildung im IT-Bereich mit Fokus auf Programmierung
+            und logisches Denken.
         </p>
     </div>
 </section>
 
+<!-- ÜBER MICH – MIT BILD -->
+<section id="about" class="section">
+    <div class="container about__container">
+        <img src="assets/img/Venis_Bild.jpg"
+             alt="Venis Ibrahimi"
+             style="max-width:250px; border-radius:16px;">
+
+        <div>
+            <h2>Über mich</h2>
+            <p>
+                Ich bin Schüler mit großem Interesse an Informationstechnologie.
+                Besonders arbeite ich mit Scratch und entwickle eigene Spiele.
+                Zusätzlich lerne ich HTML und CSS und bilde mich selbstständig weiter.
+                Ich bin motiviert, zuverlässig und lernbereit.
+            </p>
+        </div>
+    </div>
+</section>
+
 <!-- SKILLS -->
-<section class="skills section" id="skills">
-    <h2 class="section__title">Skills</h2>
-    <span class="section__subtitle">Grundkenntnisse</span>
-
-    <div class="skills__container container">
+<section id="skills" class="section">
+    <div class="container">
+        <h2>Skills</h2>
         <ul>
-            <li>Scratch (Spiele, Logik, Variablen, Events)</li>
+            <li>Scratch (Spiele & Logik)</li>
             <li>HTML & CSS (Grundlagen)</li>
-            <li>Logisches Denken & Problemlösung</li>
+            <li>Logisches Denken</li>
             <li>Eigenständiges Lernen</li>
-            <li>Großes Interesse an IT</li>
         </ul>
     </div>
 </section>
 
-<!-- PORTFOLIO / SCRATCH DOWNLOADS -->
-<section class="portfolio section" id="portfolio">
-    <h2 class="section__title">Projekte</h2>
-    <span class="section__subtitle">Scratch-Projekte (Download & Öffnen)</span>
-
+<!-- PROJEKTE – SCRATCH DOWNLOAD -->
+<section id="portfolio" class="section">
     <div class="container">
+        <h2>Projekte</h2>
+        <p>Scratch-Projekte herunterladen und in Scratch öffnen:</p>
 
-        <div style="
-            background:#f7f7f7;
-            padding:20px;
-            border-radius:12px;
-            margin-bottom:30px;
-        ">
+        <div class="project-box">
             <h3>Scratch Projekt – venis projekt</h3>
-            <p>
-                Dieses Scratch-Spiel kann heruntergeladen und in Scratch geöffnet werden.<br>
-                Öffnen in Scratch über:<br>
-                <strong>Datei → Von deinem Computer laden</strong>
-            </p>
-            assets/assets/scratch/venis%20projekt.sb3
-               download
-               class="button button--flex">
+            <p>Datei → Von deinem Computer laden</p>
+            <a href="assets/assets/scratch/venis%20projekt.sb3" download>
                 Scratch öffnen
             </a>
         </div>
 
-        <div style="
-            background:#f7f7f7;
-            padding:20px;
-            border-radius:12px;
-        ">
+        <div class="project-box">
             <h3>Scratch Projekt – venis fishingsim</h3>
-            <p>
-                Eigenes Scratch-Spiel mit Spielmechaniken.<br>
-                Öffnen in Scratch über:<br>
-                <strong>Datei → Von deinem Computer laden</strong>
-            </p>
-            <a href="assets/assets/scratch/venis%20fishingsim.sb3
-               download
-               class="button button--flex">
+            <p>Datei → Von deinem Computer laden</p>
+            <a href="assets/assets/scratch/venis%20fishingsim.sb3" download>
                 Scratch öffnen
             </a>
         </div>
-
     </div>
 </section>
 
-
-<!-- CERTIFICATES -->
-<section class="certificate section" id="certificates">
-    <h2 class="section__title">Zertifikate</h2>
-    <span class="section__subtitle">Nachweise</span>
-
+<!-- ZERTIFIKATE -->
+<section id="certificates" class="section">
     <div class="container">
+        <h2>Zertifikate</h2>
         <ul>
-            <li>Grundlagen der Informatik für die Berufswelt (FSWI)</li>
-            <li>Python Basic / Fortgeschritten / Master (Logiscool Zürich Süd)</li>
-            <li>Scratch / Blockprogrammierung (Logiscool)</li>
+            <li>Grundlagen der Informatik (FSWI)</li>
+            <li>Python Basic / Fortgeschritten / Master (Logiscool)</li>
+            <li>Scratch / Blockprogrammierung</li>
         </ul>
 
-        <div style="margin-top:20px;">
-            <a href="assets/pdf/Zertifikate-IT.pdf"
-               target="_blank"
-               class="button button--flex">
-                Zertifikate als PDF ansehen
-            </a>
-        </div>
+        <a href="assets/pdf/Zertifikate-IT.pdf" target="_blank">
+            Zertifikate als PDF ansehen
+        </a>
     </div>
 </section>
 
-<!-- CONTACT -->
-<section class="contact section" id="contact">
-    <h2 class="section__title">Kontakt</h2>
-    <span class="section__subtitle">Erreichbarkeit</span>
-
-    <div class="contact__container container">
-        <p><strong>Email:</strong> venis.ibrahimi10@gmail.com</p>
-        <p><strong>GitHub:</strong>
-            <a href="https://github.com/vzuerich79" target="_blank">github.com/vzuerich79</a>
+<!-- KONTAKT -->
+<section id="contact" class="section">
+    <div class="container">
+        <h2>Kontakt</h2>
+        <p>Email: venis.ibrahimi10@gmail.com</p>
+        <p>
+            GitHub:
+            <a href="https://github.com/vzuerich79" target="_blank">
+                github.com/vzuerich79
+            </a>
         </p>
     </div>
 </section>
@@ -166,9 +128,7 @@
 </main>
 
 <footer class="footer">
-    <div class="footer__bg">
-        <p class="footer__copy">© 2025 Venis Ibrahimi – IT-Bewerbung</p>
-    </div>
+    <p>© 2025 Venis Ibrahimi – IT-Bewerbung</p>
 </footer>
 
 </body>
