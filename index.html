@@ -1,117 +1,298 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>IT-Bewerbung – Venis Ibrahimi</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="IT-interessierter Schüler – Online-Bewerbungsportfolio" />
+  <meta name="keywords" content="IT Bewerbung, Schüler, Scratch, Portfolio" />
+  <title>IT-Bewerbung – Venis Ibrahimi</title>
 
-<link rel="stylesheet" href="assets/css/style.css"/>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 
-<style>
-body{background:#fff;color:#0f172a;font-family:Arial,Helvetica,sans-serif;margin:0;}
-header{position:sticky;top:0;background:#fff;border-bottom:1px solid #e5e7eb;}
-nav{max-width:900px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:10px 16px;}
-nav ul{list-style:none;display:flex;gap:18px;margin:0;padding:0;}
-nav a{text-decoration:none;color:#374151;font-size:14px;}
-nav a:hover{color:#111827;}
+  <style>
+    body{
+      background:#ffffff;
+      color:#0f172a;
+      font-family: Arial, Helvetica, sans-serif;
+      margin:0;
+    }
 
-main{max-width:900px;margin:auto;padding:18px;}
+    /* HEADER / NAV */
+    .header{
+      position:sticky;
+      top:0;
+      z-index:10;
+      background:#ffffff;
+      border-bottom:1px solid #e5e7eb;
+    }
+    .nav{
+      max-width:1000px;
+      margin:0 auto;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:10px 16px;
+    }
+    .nav__logo{
+      font-weight:700;
+      font-size:16px;
+      color:#111827;
+      text-decoration:none;
+    }
+    .nav__list{
+      list-style:none;
+      display:flex;
+      gap:18px;
+      margin:0;
+      padding:0;
+      font-size:14px;
+    }
+    .nav__link{
+      text-decoration:none;
+      color:#4b5563;
+    }
+    .nav__link:hover,
+    .nav__link.active-link{
+      color:#111827;
+      font-weight:600;
+    }
 
-.section{padding:26px 0;border-bottom:1px solid #f3f4f6;}
-.section__title{margin:0 0 6px 0;font-size:22px;}
-.section__subtitle{margin-bottom:12px;color:#6b7280;font-size:13px;display:block;}
+    /* LAYOUT */
+    .main{
+      max-width:1000px;
+      margin:0 auto;
+      padding:24px 16px 32px;
+    }
+    .section{
+      padding:28px 0;
+      border-bottom:1px solid #f3f4f6;
+    }
+    .section__title{
+      margin:0 0 6px 0;
+      font-size:22px;
+      text-align:center;
+    }
+    .section__subtitle{
+      display:block;
+      text-align:center;
+      font-size:13px;
+      color:#6b7280;
+      margin-bottom:16px;
+    }
 
-.about-grid{display:grid;grid-template-columns:220px 1fr;gap:18px;align-items:center;}
-.about-grid img{width:100%;border-radius:6px;}
+    /* CARDS */
+    .card{
+      background:#ffffff;
+      border-radius:12px;
+      padding:18px 18px;
+      box-shadow:0 10px 24px rgba(0,0,0,.05);
+    }
 
-ul{margin-top:6px;}
-.button{background:#111827;color:#fff;padding:8px 14px;border-radius:4px;text-decoration:none;display:inline-block;margin-top:6px;}
+    /* HOME */
+    .home__container{
+      display:flex;
+      justify-content:center;
+    }
+    .home__data{
+      max-width:650px;
+      text-align:center;
+    }
+    .home_title{margin:0 0 8px 0;font-size:24px;}
+    .home__subtitle{margin:0 0 6px 0;font-size:16px;color:#374151;}
+    .home__description{margin:0 0 14px 0;font-size:14px;color:#4b5563;}
 
-.project-buttons a{margin-right:8px;margin-bottom:4px;}
-footer{text-align:center;padding:12px;color:#6b7280;font-size:13px;}
-</style>
+    /* ABOUT */
+    .about__container{
+      display:grid;
+      grid-template-columns:260px 1fr;
+      gap:20px;
+      align-items:center;
+    }
+    .about__img{
+      width:100%;
+      border-radius:10px;
+      box-shadow:0 12px 26px rgba(0,0,0,.08);
+    }
+    .about__description{
+      margin:0;
+      font-size:14px;
+      color:#374151;
+      line-height:1.5;
+    }
+
+    /* SKILLS */
+    .skills__container ul{
+      margin:0;
+      padding-left:18px;
+      font-size:14px;
+      color:#374151;
+    }
+
+    /* BUTTONS */
+    .button{
+      background:#111827;
+      color:#ffffff;
+      padding:8px 16px;
+      border-radius:999px;
+      text-decoration:none;
+      display:inline-block;
+      font-size:14px;
+    }
+    .button:hover{
+      background:#020617;
+    }
+
+    /* PROJECT BUTTONS */
+    .project-buttons{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-top:10px;
+    }
+
+    /* DOCUMENTS & CERTS */
+    .doc-links a{
+      margin-right:8px;
+      margin-bottom:8px;
+    }
+
+    /* CONTACT */
+    .contact__container p{
+      margin:2px 0;
+      font-size:14px;
+    }
+
+    footer{
+      text-align:center;
+      padding:12px;
+      font-size:13px;
+      color:#6b7280;
+      border-top:1px solid #f3f4f6;
+      margin-top:12px;
+    }
+
+    @media(max-width:768px){
+      .about__container{
+        grid-template-columns:1fr;
+        text-align:center;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-<nav>
-  <strong>Venis Ibrahimi</strong>
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">Über mich</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#portfolio">Projekte</a></li>
-    <li><a href="#certificates">Zertifikate</a></li>
-    <li><a href="#documents">Dokumente</a></li>
-    <li><a href="#contact">Kontakt</a></li>
-  </ul>
-</nav>
+<header class="header" id="header">
+  <nav class="nav container">
+    <a href="#home" class="nav__logo">Venis Ibrahimi</a>
+    <ul class="nav__list">
+      <li><a href="#home" class="nav__link">Home</a></li>
+      <li><a href="#about" class="nav__link">Über mich</a></li>
+      <li><a href="#skills" class="nav__link">Skills</a></li>
+      <li><a href="#portfolio" class="nav__link">Projekte</a></li>
+      <li><a href="#certificates" class="nav__link">Zertifikate</a></li>
+      <li><a href="#documents" class="nav__link">Dokumente</a></li>
+      <li><a href="#contact" class="nav__link">Kontakt</a></li>
+    </ul>
+  </nav>
 </header>
 
-<main>
+<main class="main">
 
-<section id="home" class="section">
-  <h2 class="section__title">Hallo — ich bin Venis Ibrahimi</h2>
-  <p>IT-interessierter Schüler mit Motivation für eine Ausbildung im IT-Bereich.</p>
-</section>
+  <!-- HOME -->
+  <section class="home section" id="home">
+    <div class="home__container">
+      <div class="home__data card">
+        <h1 class="home_title">Hallo, ich bin Venis Ibrahimi</h1>
+        <h3 class="home__subtitle">IT-interessierter Schüler</h3>
+        <p class="home__description">
+          Ich interessiere mich für Programmierung, Scratch-Projekte und Webentwicklung
+          und möchte mich im IT-Bereich weiterentwickeln.
+        </p>
+        <a href="#contact" class="button">Kontakt aufnehmen</a>
+      </div>
+    </div>
+  </section>
 
-<section id="about" class="section">
-  <h2 class="section__title">Über mich</h2>
-  <span class="section__subtitle">Kurzvorstellung</span>
+  <!-- ÜBER MICH -->
+  <section class="about section" id="about">
+    <h2 class="section__title">Über mich</h2>
+    <span class="section__subtitle">Kurzvorstellung</span>
 
-  <div class="about-grid">
-    <img src="assets/img/Venis_Bild.jpg" alt="Venis Ibrahimi">
-    <p>
-      Ich arbeite mit Scratch, um Programmierlogik zu verstehen.
-      Zusätzlich lerne ich HTML & CSS.  
-      Ich bin zuverlässig, motiviert und lernbereit.
-    </p>
-  </div>
-</section>
+    <div class="about__container">
+      <img src="assets/img/Venis_Bild.jpg" alt="Venis Ibrahimi" class="about__img" />
 
-<section id="skills" class="section">
-  <h2 class="section__title">Skills</h2>
-  <span class="section__subtitle">Grundkenntnisse</span>
+      <div class="about__data card">
+        <p class="about__description">
+          Ich arbeite mit Scratch, um Programmierlogik und strukturiertes Denken zu lernen.
+          Zusätzlich lerne ich HTML &amp; CSS und bilde mich selbstständig weiter.
+          Ich bin zuverlässig, motiviert und lernbereit.
+        </p>
+      </div>
+    </div>
+  </section>
 
-  <ul>
-    <li>Scratch (Spiele & Logik)</li>
-    <li>HTML & CSS Grundlagen</li>
-    <li>Logisches Denken</li>
-    <li>Eigenständiges Lernen</li>
-  </ul>
-</section>
+  <!-- SKILLS -->
+  <section class="skills section" id="skills">
+    <h2 class="section__title">Skills</h2>
+    <span class="section__subtitle">Grundkenntnisse</span>
 
-<section id="portfolio" class="section">
-  <h2 class="section__title">Projekte</h2>
-  <span class="section__subtitle">Scratch – herunterladen & in Scratch öffnen</span>
+    <div class="skills__container card">
+      <ul>
+        <li>Scratch (Spiele &amp; Logik)</li>
+        <li>HTML &amp; CSS Grundlagen</li>
+        <li>Logisches Denken &amp; Problemlösung</li>
+        <li>Eigenständiges Lernen</li>
+      </ul>
+    </div>
+  </section>
 
-  <p>Scratch → <strong>Datei → Von deinem Computer laden</strong></p>
+  <!-- PROJEKTE -->
+  <section class="portfolio section" id="portfolio">
+    <h2 class="section__title">Projekte</h2>
+    <span class="section__subtitle">Scratch – herunterladen &amp; in Scratch öffnen</span>
 
-  <div class="project-buttons">
-    <a class="button" href="assets/scratch/venis-projekt.sb3" download>venis-projekt.sb3</a>
-    <a class="button" href="assets/scratch/venis-fishingsim.sb3" download>venis-fishingsim.sb3</a>
-  </div>
-</section>
+    <div class="card">
+      <p>In Scratch öffnen: <strong>Datei → Von deinem Computer laden</strong></p>
+      <div class="project-buttons">
+        <a class="button" href="assets/scratch/venis-projekt.sb3" download>venis-projekt.sb3</a>
+        <a class="button" href="assets/scratch/venis-fishingsim.sb3" download>venis-fishingsim.sb3</a>
+      </div>
+    </div>
+  </section>
 
-<section id="certificates" class="section">
-  <h2 class="section__title">Zertifikate</h2>
-  <a class="button" target="_blank" href="assets/pdf/Zertifikate-IT.pdf">Zertifikate ansehen</a>
-</section>
+  <!-- ZERTIFIKATE -->
+  <section class="certificate section" id="certificates">
+    <h2 class="section__title">Zertifikate</h2>
 
-<section id="documents" class="section">
-  <h2 class="section__title">Bewerbungsdokumente</h2>
-  <a class="button" target="_blank" href="assets/pdf/Lebenslauf-Venis.pdf">Lebenslauf</a>
-  <a class="button" target="_blank" href="assets/pdf/Stellwerk-Venis.pdf">Stellwerk</a>
-</section>
+    <div class="card doc-links">
+      <a class="button" target="_blank" href="assets/pdf/Zertifikate-IT.pdf">Zertifikate ansehen</a>
+    </div>
+  </section>
 
-<section id="contact" class="section">
-  <h2 class="section__title">Kontakt</h2>
+  <!-- BEWERBUNGSDOKUMENTE -->
+  <section class="section" id="documents">
+    <h2 class="section__title">Bewerbungsdokumente</h2>
 
-  <p><strong>Email:</strong> venis.ibrahimi10@gmail.com</p>
-  <p><strong>Telefon:</strong> 076 449 41 73</p>
-  <p><strong>GitHub:</strong> <a href="https://github.com/vzuerich79" target="_blank">github.com/vzuerich79</a></p>
-</section>
+    <div class="card doc-links">
+      <a class="button" target="_blank" href="assets/pdf/Lebenslauf-Venis.pdf">Lebenslauf</a>
+      <a class="button" target="_blank" href="assets/pdf/Stellwerk-Venis.pdf">Stellwerk</a>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section class="contact section" id="contact">
+    <h2 class="section__title">Kontakt</h2>
+
+    <div class="contact__container card">
+      <p><strong>Email:</strong> venis.ibrahimi10@gmail.com</p>
+      <p><strong>Telefon:</strong> 076 449 41 73</p>
+      <p><strong>GitHub:</strong>
+        <a href="https://github.com/vzuerich79" target="_blank">github.com/vzuerich79</a>
+      </p>
+    </div>
+  </section>
 
 </main>
 
@@ -121,3 +302,4 @@ footer{text-align:center;padding:12px;color:#6b7280;font-size:13px;}
 
 </body>
 </html>
+
