@@ -17,38 +17,64 @@
     <!-- HAUPT-CSS DES ORIGINAL-TEMPLATES -->
     <link rel="stylesheet" href="assets/css/style.css" />
 
-    <!-- SERIÖSERES DESIGN: FARBTÖNE ETWAS RUHIGER / HELLER -->
+    <!-- DEZENTES, STRUKTURIERTES DESIGN -->
     <style>
         :root {
-            /* Primärfarbe: seriöses Blau statt knalligem Pink/Lila */
-            --first-color: #2563eb;
+            /* Ruhige, professionelle Farben */
+            --first-color: #2563eb;           /* Blau */
             --first-color-alt: #1d4ed8;
-            --first-color-lighter: #dbeafe;
+            --first-color-lighter: #e5edff;
 
-            /* Text & Hintergrund ruhiger/heller */
             --title-color: #0f172a;
             --text-color: #374151;
-            --body-color: #ffffff;
+            --body-color: #f9fafb;
             --container-color: #ffffff;
         }
 
         body {
             background-color: var(--body-color);
+            color: var(--text-color);
         }
 
         .section__title,
         .footer__title {
-            text-transform: none; /* kein komplett GROSS, wirkt seriöser */
-        }
-
-        .button {
-            border-radius: 999px;
-            padding: 0.6rem 1.4rem;
-            font-size: 0.9rem;
+            text-transform: none;
+            letter-spacing: 0.02em;
         }
 
         .about__img {
             border-radius: 12px;
+            box-shadow: 0 12px 30px rgba(15, 23, 42, 0.15);
+        }
+
+        .button {
+            border-radius: 999px;
+            padding: 0.55rem 1.4rem;
+            font-size: 0.9rem;
+        }
+
+        .portfolio__content,
+        .certificate .container,
+        #documents .container,
+        .contact__container {
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 1.25rem 1.5rem;
+            box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+        }
+
+        #documents .button {
+            margin: 0.25rem 0.4rem 0.25rem 0;
+        }
+
+        .skills__content {
+            background: #ffffff;
+            border-radius: 14px;
+            box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+        }
+
+        .home__description {
+            max-width: 32rem;
         }
     </style>
 
@@ -293,7 +319,7 @@
                 <a href="assets/pdf/Zertifikate-IT.pdf"
                    target="_blank"
                    class="button button--flex">
-                    Zertifikate ansehen
+                    Zertifikate IT ansehen
                     <i class="uil uil-arrow-right button__icon"></i>
                 </a>
             </div>
@@ -328,7 +354,7 @@
                 <a class="button button--flex button--small"
                    target="_blank"
                    href="assets/pdf/Zertifikate-IT.pdf">
-                    Zertifikate (Sammlung)
+                    Zertifikate IT
                     <i class="uil uil-arrow-right button__icon"></i>
                 </a>
             </div>
