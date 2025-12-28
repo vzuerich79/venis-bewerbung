@@ -1,184 +1,216 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Online-Bewerbungsportfolio – Venis Ibrahimi">
-    <meta name="keywords" content="IT, Bewerbung, Schüler, Portfolio, Scratch, Programmierung">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="IT-interessierter Schüler – Online-Bewerbungsportfolio" />
+  <meta name="keywords" content="IT Bewerbung, Schüler, Scratch, Portfolio" />
 
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <!-- Original Template CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
 
-    <title>IT-Bewerbung – Venis Ibrahimi</title>
+  <title>IT-Bewerbung – Venis Ibrahimi</title>
 </head>
 
 <body>
 
-<header class="header" id="header">
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header">
     <nav class="nav container">
-        <a href="#" class="nav__logo">Venis Ibrahimi</a>
+      <a href="#home" class="nav__logo">Venis Ibrahimi</a>
 
-        <div class="nav__menu" id="nav-menu">
-            <ul class="nav__list grid">
-                <li class="nav__items"><a href="#home" class="nav__link active-link">Home</a></li>
-                <li class="nav__items"><a href="#about" class="nav__link">Über mich</a></li>
-                <li class="nav__items"><a href="#skills" class="nav__link">Skills</a></li>
-                <li class="nav__items"><a href="#portfolio" class="nav__link">Projekte</a></li>
-                <li class="nav__items"><a href="#certificates" class="nav__link">Zertifikate</a></li>
-                <li class="nav__items"><a href="#documents" class="nav__link">Dokumente</a></li>
-                <li class="nav__items"><a href="#contact" class="nav__link">Kontakt</a></li>
-            </ul>
-        </div>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list grid">
+          <li class="nav__items"><a href="#home" class="nav__link active-link">Home</a></li>
+          <li class="nav__items"><a href="#about" class="nav__link">Über mich</a></li>
+          <li class="nav__items"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__items"><a href="#portfolio" class="nav__link">Projekte</a></li>
+          <li class="nav__items"><a href="#certificates" class="nav__link">Zertifikate</a></li>
+          <li class="nav__items"><a href="#documents" class="nav__link">Dokumente</a></li>
+          <li class="nav__items"><a href="#contact" class="nav__link">Kontakt</a></li>
+        </ul>
+      </div>
     </nav>
-</header>
+  </header>
 
+  <main class="main">
 
-<main class="main">
-
-<!-- HOME (ohne Bild) -->
-<section class="home section" id="home">
-    <div class="home__container container grid">
+    <!--==================== HOME (OHNE BILD) ====================-->
+    <section class="home section" id="home">
+      <div class="home__container container grid">
         <div class="home__content grid">
 
-            <div class="home__data">
-                <h1 class="home_title">Hi, ich bin Venis Ibrahimi</h1>
-                <h3 class="home__subtitle">IT-interessierter Schüler</h3>
+          <!-- GitHub Icon links -->
+          <div class="home__social">
+            <a href="https://github.com/vzuerich79"
+               target="_blank"
+               class="home__social-icon">
+              <i class="uil uil-github-alt"></i>
+            </a>
+          </div>
 
-                <p class="home__description">
-                    Ich interessiere mich für Programmierung, Scratch-Projekte und Webentwicklung
-                    und möchte mich Schritt für Schritt in der IT-Welt weiterentwickeln.
-                </p>
-
-                <a href="#contact" class="button button--flex">
-                    Kontakt
-                    <i class="uil uil-message button__icon"></i>
-                </a>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-
-<!-- ÜBER MICH -->
-<section class="about section" id="about">
-    <h2 class="section__title">Über mich</h2>
-    <span class="section__subtitle">Kurzvorstellung</span>
-
-    <div class="about__container container grid">
-        <div class="about__data">
-            <p class="about__description">
-                Ich bin ein neugieriger Schüler mit grosser Leidenschaft für Informatik.
-                Programmierung, Cybersecurity und Netzwerke faszinieren mich —
-                mit Scratch, Python und C# sammle ich bereits praktische Erfahrungen.
-                Ich arbeite zuverlässig, denke analytisch und lerne gern selbstständig weiter.
-                Mein Ziel ist es, mich fachlich weiterzuentwickeln und meinen Platz
-                in der IT-Welt zu finden — Schritt für Schritt mit viel Motivation.
+          <!-- NUR TEXT – KEIN BILD -->
+          <div class="home__data">
+            <h1 class="home_title">Hi, ich bin Venis Ibrahimi</h1>
+            <h3 class="home__subtitle">IT-interessierter Schüler</h3>
+            <p class="home__description">
+              Ich interessiere mich für Programmierung, Scratch-Projekte und Webentwicklung
+              und möchte mich Schritt für Schritt in der IT-Welt weiterentwickeln.
             </p>
+            <a href="#contact" class="button button--flex">
+              Kontakt
+              <i class="uil uil-message button__icon"></i>
+            </a>
+          </div>
+
         </div>
-    </div>
-</section>
 
+        <div class="home__scroll">
+          <a href="#about" class="home__scroll-button button--flex">
+            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+            <span class="home__scroll-name">Scroll down</span>
+            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+          </a>
+        </div>
+      </div>
+    </section>
 
-<!-- SKILLS -->
-<section class="skills section" id="skills">
-    <h2 class="section__title">Skills</h2>
-    <span class="section__subtitle">Grundkenntnisse</span>
+    <!--==================== ABOUT ====================-->
+    <section class="about section" id="about">
+      <h2 class="section__title">Über mich</h2>
+      <span class="section__subtitle">Kurzvorstellung</span>
 
-    <div class="skills__container container grid">
+      <div class="about__container container grid">
+        <div class="about__data">
+          <p class="about__description">
+            Ich bin ein neugieriger Schüler mit grosser Leidenschaft für Informatik.
+            Programmierung, Cybersecurity und Netzwerke faszinieren mich — mit Scratch,
+            Python und C# sammle ich bereits praktische Erfahrungen. Ich arbeite zuverlässig,
+            denke analytisch und lerne gern selbstständig weiter. Mein Ziel ist es,
+            mich fachlich weiterzuentwickeln und meinen Platz in der IT-Welt zu finden —
+            Schritt für Schritt mit viel Motivation.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== SKILLS ====================-->
+    <section class="skills section" id="skills">
+      <h2 class="section__title">Skills</h2>
+      <span class="section__subtitle">Grundkenntnisse</span>
+
+      <div class="skills__container container grid">
         <ul>
-            <li>Scratch – Spiele & Logik</li>
-            <li>Python – Grundlagen</li>
-            <li>C# – Einstiegskenntnisse</li>
-            <li>HTML & CSS</li>
-            <li>Eigenständiges Lernen & Teamfähigkeit</li>
+          <li>Scratch – Spiele &amp; Logik</li>
+          <li>Python – Grundlagen</li>
+          <li>C# – Einstiegskenntnisse</li>
+          <li>HTML &amp; CSS</li>
+          <li>Eigenständiges Lernen &amp; Teamfähigkeit</li>
         </ul>
-    </div>
-</section>
+      </div>
+    </section>
 
+    <!--==================== PROJECTS ====================-->
+    <section class="portfolio section" id="portfolio">
+      <h2 class="section__title">Projekte</h2>
+      <span class="section__subtitle">Scratch – herunterladen &amp; in Scratch öffnen</span>
 
-<!-- PROJEKTE -->
-<section class="portfolio section" id="portfolio">
-    <h2 class="section__title">Projekte</h2>
-    <span class="section__subtitle">Scratch – herunterladen & in Scratch öffnen</span>
-
-    <div class="portfolio__container container grid">
+      <div class="portfolio__container container grid">
 
         <div class="portfolio__content">
-            <h3>venis-projekt.sb3</h3>
-            <a href="assets/scratch/venis-projekt.sb3" download class="button button--flex button--small">
-                Download
-            </a>
+          <h3>venis-projekt.sb3</h3>
+          <p>Öffnen in Scratch: <strong>Datei → Von deinem Computer laden</strong></p>
+          <a class="button button--flex button--small"
+             href="assets/scratch/venis-projekt.sb3"
+             download>
+            Scratch öffnen
+            <i class="uil uil-arrow-right button__icon"></i>
+          </a>
         </div>
 
         <div class="portfolio__content">
-            <h3>venis-fishingsim.sb3</h3>
-            <a href="assets/scratch/venis-fishingsim.sb3" download class="button button--flex button--small">
-                Download
-            </a>
+          <h3>venis-fishingsim.sb3</h3>
+          <p>Öffnen in Scratch: <strong>Datei → Von deinem Computer laden</strong></p>
+          <a class="button button--flex button--small"
+             href="assets/scratch/venis-fishingsim.sb3"
+             download>
+            Scratch öffnen
+            <i class="uil uil-arrow-right button__icon"></i>
+          </a>
         </div>
 
-    </div>
-</section>
+      </div>
+    </section>
 
+    <!--==================== CERTIFICATES ====================-->
+    <section class="certificate section" id="certificates">
+      <h2 class="section__title">Zertifikate</h2>
+      <span class="section__subtitle">Nachweise &amp; Kurse</span>
 
-<!-- ZERTIFIKATE -->
-<section class="certificate section" id="certificates">
-    <h2 class="section__title">Zertifikate</h2>
-    <span class="section__subtitle">Nachweise & Kurse</span>
-
-    <div class="container" style="text-align:center;">
-        <a href="assets/pdf/Zertifikate-IT.pdf" target="_blank" class="button button--flex">
-            Zertifikate ansehen
+      <div class="container" style="text-align:center;">
+        <a class="button button--flex"
+           target="_blank"
+           href="assets/pdf/Zertifikate-IT.pdf">
+          Zertifikate ansehen
+          <i class="uil uil-arrow-right button__icon"></i>
         </a>
-    </div>
-</section>
+      </div>
+    </section>
 
+    <!--==================== DOCUMENTS ====================-->
+    <section class="documents section" id="documents">
+      <h2 class="section__title">Bewerbungsdokumente</h2>
 
-<!-- DOKUMENTE -->
-<section class="documents section" id="documents">
-    <h2 class="section__title">Bewerbungsdokumente</h2>
-
-    <div class="container grid">
-
-        <a href="assets/pdf/Lebenslauf-Venis.pdf" target="_blank" class="button button--flex">
-            Lebenslauf
-        </a>
-
-        <a href="assets/pdf/Stellwerk-Venis.pdf" target="_blank" class="button button--flex">
-            Stellwerk
-        </a>
-
-        <a href="assets/pdf/Oberstufenzeugnisse.pdf" target="_blank" class="button button--flex">
-            Oberstufenzeugnisse
+      <div class="container grid">
+        <a class="button button--flex button--small"
+           target="_blank"
+           href="assets/pdf/Lebenslauf-Venis.pdf">
+          Lebenslauf
+          <i class="uil uil-arrow-right button__icon"></i>
         </a>
 
-    </div>
-</section>
+        <a class="button button--flex button--small"
+           target="_blank"
+           href="assets/pdf/Stellwerk-Venis.pdf">
+          Stellwerk
+          <i class="uil uil-arrow-right button__icon"></i>
+        </a>
 
+        <a class="button button--flex button--small"
+           target="_blank"
+           href="assets/pdf/Oberstufenzeugnisse.pdf">
+          Oberstufenzeugnisse
+          <i class="uil uil-arrow-right button__icon"></i>
+        </a>
+      </div>
+    </section>
 
-<!-- KONTAKT -->
-<section class="contact section" id="contact">
-    <h2 class="section__title">Kontakt</h2>
+    <!--==================== CONTACT ====================-->
+    <section class="contact section" id="contact">
+      <h2 class="section__title">Kontakt</h2>
+      <span class="section__subtitle">So erreichen Sie mich</span>
 
-    <div class="contact__container container grid">
+      <div class="contact__container container grid">
         <p><strong>Email:</strong> venis.ibrahimi10@gmail.com</p>
         <p><strong>Telefon:</strong> 076 449 41 73</p>
         <p><strong>GitHub:</strong>
-            <a href="https://github.com/vzuerich79" target="_blank">github.com/vzuerich79</a>
+          <a href="https://github.com/vzuerich79" target="_blank">
+            github.com/vzuerich79
+          </a>
         </p>
-    </div>
-</section>
+      </div>
+    </section>
 
-</main>
+  </main>
 
-
-<footer class="footer">
+  <!--==================== FOOTER ====================-->
+  <footer class="footer">
     <div class="footer__bg">
-        <p class="footer__copy">© 2025 Venis Ibrahimi – IT-Bewerbung</p>
+      <p class="footer__copy">© 2025 Venis Ibrahimi – IT-Bewerbung</p>
     </div>
-</footer>
+  </footer>
 
 </body>
 </html>
