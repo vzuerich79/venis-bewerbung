@@ -1,89 +1,121 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IT-Bewerbung – Venis Ibrahimi</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT-Bewerbung – Venis Ibrahimi</title>
 
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <style>
+        body { font-family: Arial; margin:0; background:#ffffff; color:#111; }
+
+        header { display:flex; justify-content:space-between; padding:18px 60px; border-bottom:1px solid #eee; }
+        nav a { margin-right:25px; text-decoration:none; color:#222; font-weight:600; }
+        nav a:hover { color:#2e5bff; }
+
+        section { padding:80px 60px; max-width:950px; margin:auto; }
+
+        .about { display:flex; gap:40px; align-items:center; }
+        .about img { width:260px; border-radius:16px; }
+
+        .card { background:#f5f7ff; padding:26px; border-radius:14px; margin-top:15px; }
+
+        h1,h2 { font-weight:800; }
+        button { padding:10px 18px; border-radius:10px; border:none; background:#2e5bff; color:white; cursor:pointer; }
+    </style>
 </head>
 
 <body>
 
-<header class="header" id="header">
-  <nav class="nav container">
-    <a href="#" class="nav__logo">Venis Ibrahimi</a>
+<header>
+    <strong>Venis Ibrahimi</strong>
 
-    <div class="nav__menu">
-      <ul class="nav__list grid">
-        <li><a href="#home" class="nav__link">Home</a></li>
-        <li><a href="#about" class="nav__link">Über mich</a></li>
-        <li><a href="#skills" class="nav__link">Skills</a></li>
-        <li><a href="#portfolio" class="nav__link">Projekte</a></li>
-        <li><a href="#certificates" class="nav__link">Zertifikate</a></li>
-        <li><a href="#contact" class="nav__link">Kontakt</a></li>
-      </ul>
-    </div>
-  </nav>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">Über mich</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projekte</a>
+        <a href="#docs">Bewerbungsdokumente</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
 </header>
 
+<!-- HERO – OHNE BILD -->
+<section id="home">
+    <h1>Hi, ich bin Venis</h1>
+    <p>
+        IT-interessierter Schüler — ich lerne Programmierung, Web-Technologien
+        und arbeite an kleinen Projekten, um mich laufend weiterzuentwickeln.
+    </p>
 
-<!-- ===================== HOME (OHNE BILD) ===================== -->
-<section class="home section" id="home">
-  <div class="home__container container grid">
-    <div class="home__data">
-
-      <h1 class="home__title">Hi, ich bin Venis Ibrahimi</h1>
-      <h3 class="home__subtitle">IT-interessierter Schüler</h3>
-
-      <p class="home__description">
-        Ich interessiere mich für Programmierung, Scratch-Projekte und Webentwicklung
-        und möchte mich in der IT-Welt weiterentwickeln.
-      </p>
-
-      <a href="#contact" class="button button--flex">
-        Kontakt
-      </a>
-    </div>
-  </div>
+    <button onclick="location.href='#contact'">Kontakt</button>
 </section>
 
+<!-- ÜBER MICH – MIT BILD -->
+<section id="about">
+    <h2>Über mich</h2>
 
+    <div class="about">
+        <div>
+            <p>
+                Ich bin ein neugieriger Schüler mit grosser Leidenschaft für Informatik.
+                Programmierung, Cybersecurity und Netzwerke faszinieren mich —
+                mit Scratch, Python und C# sammle ich bereits praktische Erfahrungen.
+                Ich arbeite zuverlässig, denke analytisch und lerne gern selbstständig weiter.
+                Mein Ziel ist es, mich fachlich weiterzuentwickeln und meinen Platz in der IT-Welt
+                zu finden — Schritt für Schritt mit viel Motivation.
+            </p>
+        </div>
 
-<!-- ===================== ÜBER MICH (MIT BILD) ===================== -->
-<section class="about section" id="about">
-  <h2 class="section__title">Über mich</h2>
-  <span class="section__subtitle">Kurzvorstellung</span>
-
-  <div class="about__container container grid">
-
-    <div class="about__img">
-      <img src="assets/img/Venis_Bild.jpg" alt="Venis Ibrahimi">
+        <img src="assets/img/Venis_Bild.jpg" alt="Venis Ibrahimi">
     </div>
-
-    <div class="about__data">
-      <p class="about__description">
-        Ich bin ein neugieriger Schüler mit grosser Leidenschaft für Informatik.
-        Programmierung, Cybersecurity und Netzwerke faszinieren mich — mit Scratch,
-        Python und C# sammle ich bereits praktische Erfahrungen.
-        Ich arbeite zuverlässig, denke analytisch und lerne gern selbstständig weiter.
-        Mein Ziel ist es, mich fachlich weiterzuentwickeln und meinen Platz
-        in der IT-Welt zu finden — Schritt für Schritt mit viel Motivation.
-      </p>
-    </div>
-
-  </div>
 </section>
 
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Skills</h2>
 
+    <div class="card">
+        Scratch – Grundlagen (Spiele & Logik)
+    </div>
+    <div class="card">
+        Python – einfache Programme
+    </div>
+    <div class="card">
+        C# – Einstieg & kleine Projekte
+    </div>
+</section>
 
-<!-- ===================== REST DEINER SEKTIONEN BLEIBT ===================== -->
-<!-- deine Skills / Projekte / Zertifikate / Dokumente / Kontakt -->
-<!-- (die habe ich NICHT verändert) -->
+<!-- PROJEKTE -->
+<section id="projects">
+    <h2>Projekte</h2>
 
+    <p>Scratch → Datei → „Von deinem Computer laden“</p>
 
-<script src="assets/js/main.js"></script>
+    <button onclick="location.href='assets/assets/scratch/venis-projekt.sb3'">Projekt 1 herunterladen</button>
+    <button onclick="location.href='assets/assets/scratch/venis-fishingsim.sb3'">Fishing-Spiel herunterladen</button>
+</section>
+
+<!-- DOKUMENTE -->
+<section id="docs">
+    <h2>Bewerbungsdokumente</h2>
+
+    <button onclick="location.href='assets/pdf/Lebenslauf-Venis.pdf'">Lebenslauf</button>
+    <button onclick="location.href='assets/pdf/Stellwerk-Venis.pdf'">Stellwerk</button>
+    <button onclick="location.href='assets/pdf/Oberstufenzeugnisse.pdf'">Zeugnisse</button>
+    <button onclick="location.href='assets/pdf/Zertifikate-IT.pdf'">Zertifikate</button>
+</section>
+
+<!-- KONTAKT -->
+<section id="contact">
+    <h2>Kontakt</h2>
+
+    <p>Email: venis.ibrahimi10@gmail.com</p>
+    <p>Telefon: 076 449 41 73</p>
+    <p>GitHub: github.com/vzuerich79</p>
+</section>
 
 </body>
 </html>
+
